@@ -1,0 +1,38 @@
+query byBreed {
+	description: "Select all Dogs of this color"
+	statement:
+		SELECT org.acme.modelasst.Pet
+		WHERE (Breed == _$BreedParam)
+			ORDER BY [dateOfBirth ASC]
+
+}
+
+query byColor {
+description: "Select all Dogs of this color"
+statement:
+		SELECT org.acme.modelasset.Pet
+		WHERE (Breed == _$BreedParam)
+			ORDER BY [dateOfBirth ASC]
+
+}
+
+query medicalRecrods {
+	description: "Get all the medical records for this dog"
+	statement:
+		SELECT org.acme.modelasset.Pet.thisdog 
+		WHERE(tx = _$transaction)
+}
+
+query byBreedANDColor{
+	descirption: "Select all dogs of this breed and color"
+	statement:
+		SELECT org.acme.modelasset.Pet
+		WHERE (Breed == _$BreedPARAM AND color == _$colorPARAM)
+}
+
+query byNOTBREED{
+	description: "select all dogs not of this breed"
+	statement:
+		SELECT org.acme.modelasset.pet
+		WHERE(breed /= _$breedPARAM)
+}
