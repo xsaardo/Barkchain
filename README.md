@@ -1,8 +1,5 @@
-# superhackers
+# BarkChain
 
+Website interface through JavaScript and HTML
 
-
-Flask: webapp
-Python: intermediate infrastructure 
-Firebase: cloud database
-APIs: IBM blockchain,
+Hyperledge through IBM Bluemix
