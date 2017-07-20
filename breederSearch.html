@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+   		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="vetSearch.js"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		
+		<style>
+			p {
+				text-align: center
+			} 
+			.scrollable-menu {
+				height: auto;
+				max-height: 400px;
+				overflow-x: hidden;
+				width: 400px
+			}
+			.input-group{
+				width: 400px;
+				margin: 0 auto;
+			}
+			body {
+				text-align: right;
+			}
+			.col {
+				text-align: left;
+			}
+
+		</style>
+
+	</head>
+	<body>
+			<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html"><img src="blockchain_logo.jpg"></a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aboutus.html">About Us</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Pet ID">
+      <button class="btn btn-outline-success my-2 my-sm-0" onclick="vetSearch()">Search by Pet ID</button>
+    </form>
+  </div>
+</nav>
+
+
+		<div class="jumbotron text-center">
+			<h1>Barkchain - Breeders</h1>	
+			<div class="col">
+	    		<div class="input-group">
+				  <input type="text" class="form-control" placeholder="Pet ID" aria-describedby="basic-addon2" id="petID">
+					  <span class="input-group-btn">
+						<button class="btn btn-success" type="button" onclick="vetSearch()" id="buttonDrop">Search</button>
+					  </span>	  
+				</div>
+		    </div>
+		</div>
+
+		<div class="container">
+		  <div class="row">
+
+			<div class="col"> <h2 id="petheader"> </h2>
+		    </div>		    
+
+		  </div>
+
+		  <div class="row">
+		  		<div class = "col" id="petinfo">
+		  			<h5 id="petinfoheader" style="display:none"> Pet medical record </h5>
+		  		</div>
+
+		  		<div class = "col"  style="display:none" id="petforms">
+					    <h2>New Medical Record</h2>
+
+					    <p>Use this form to add a medical record for your pet. </p>
+
+					    <form>
+
+					        <div class="form-group">
+
+					          <label for="name">Pet's Name:</label>
+
+					          <input type="text" class="form-control" id="name">
+
+					      </div>
+
+					      <div class="form-group">
+
+					          <label for="number">Pet ID:</label>
+
+					          <input type="text" class="form-control" id="id">
+
+					      </div>
+
+					      <div class="form-group">
+
+					          <label for="doc">Doctor's Name:</label>
+
+					          <input type="text" class="form-control" id="docname">
+
+					      </div>
+
+					      <div class="form-group">
+
+					          <label for="owner">Current Owner:</label>
+
+					          <input type="text" class="form-control" id="owner">
+
+					      </div>
+
+					      <div class="form-group">
+
+					          <label for="summary">Medical Summary:</label>
+
+					          <input type="text" class="form-control" id="summary">
+
+					      </div>
+
+					  </form>
+
+					  <div class="wrapper">
+					    <button type="button" class="btn btn-success" onclick="submitMedicalForm()">Save</button>
+					</div>
+
+		  		</div>	
+		  </div>
+		</div>
+
+		
+
+
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" 	crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	</body>
+	<script src="search.js"></script>
+</html>
+
