@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PetOwner</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		p {
+			text-align: center
+		}
+		.form-group{
+				width: 1000px;
+				margin: 0 auto;
+			}
+		.wrapper{
+			text-align: center;
+		}
+		.btn{
+			position: center;
+		}
+	</style>
+</head>
+<body style="background-color: powderblue;">
+	<h1 style="text-align: center; font-family: arial">
+		<br>
+		Owners
+	</h1>
+	<h6 style="text-align: center;">
+		Use this form to add your pet to the system.
+	</h6>
+	<div class="wrapper">
+		<br>
+		<br>
+		<button type="button" class="btn btn-success btn-md">
+			Back
+		</button>
+	</div>
+	<div class="form-group">
+		<br>
+		<br>
+		<label for="usr">Search For Your Pet</label>
+		<input type="text" class="form-control" id="usr">
+			<span class="input-group-btn">
+				<button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button" onclick="search()" id="buttonDrop">Search</button>
+					<div class="dropdown-menu dropdown-menu-right scrollable-menu">
+						<ul id="artistOptions" style="list-style: none"></ul>
+					</div>
+			</span>	
+	</div>
+	<div class="wrapper">
+		<br>
+		<br>
+		<button type="button" class="btn btn-success btn-lg">
+			Register Your Pet
+		</button>
+	</div>
+</body>
+</html>
