@@ -1,4 +1,4 @@
-# superhackers
+# BarkChain
 
 Website interface through JavaScript and HTML
 
