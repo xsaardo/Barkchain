@@ -1,0 +1,60 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+   p {
+    text-align: center
+} 
+
+.input-group{
+    width: 400px;
+    margin: 0 auto;
+}
+.wrapper{
+   text-align: center   
+}
+.btn{
+    position: absolute;
+}
+
+</style>
+</head>
+
+<body style="background-color:lightblue;">
+</body>
+
+<div class="container">
+    <h2>New Medical Record</h2>
+    <p>Use this form to add a medical record for your pet. </p>
+    <form>
+        <div class="form-group">
+          <label for="name">Pet's Name:</label>
+          <input type="text" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+          <label for="number">Pet ID:</label>
+          <input type="text" class="form-control" id="id">
+      </div>
+      <div class="form-group">
+          <label for="doc">Doctor's Name:</label>
+          <input type="text" class="form-control" id="docname">
+      </div>
+      <div class="form-group">
+          <label for="owner">Current Owner:</label>
+          <input type="text" class="form-control" id="owner">
+      </div>
+      <div class="form-group">
+          <label for="summary">Medical Summary:</label>
+          <input type="text" class="form-control" id="summary">
+      </div>
+  </form>
+</div>
+
+<div class="wrapper">
+    <button type="button" class="btn btn-success">Save</button>
+</div>
+
+</html>
