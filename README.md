@@ -1,4 +1,5 @@
 # superhackers
 
-Website interface through JavaScript and HTML \n
+Website interface through JavaScript and HTML
+
 Hyperledge through IBM Bluemix
